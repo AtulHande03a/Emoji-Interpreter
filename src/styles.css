@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.heading {
+  color: #05445e;
+  font-family: "Luckiest Guy", Arial, Helvetica, sans-serif;
+}
+input {
+  border: 3px solid black;
+  padding: 1rem;
+  width: 20rem;
+  text-align: left;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+body {
+  background-color: #a3ebb1;
+  font-family: "Luckiest Guy", Arial, Helvetica, sans-serif;
+}
