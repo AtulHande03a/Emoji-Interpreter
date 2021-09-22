@@ -3,6 +3,10 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
 }
 
 .heading {
@@ -12,7 +16,7 @@
 input {
   border: 3px solid black;
   padding: 1rem;
-  width: 20rem;
+  width: 60%;
   text-align: left;
   font-size: 1rem;
   border-radius: 0.5rem;
@@ -21,4 +25,35 @@ input {
 body {
   background-color: #a3ebb1;
   font-family: "Luckiest Guy", Arial, Helvetica, sans-serif;
+}
+
+/*footer*/
+
+.footer {
+  position: absolute;
+  background-color: #fff;
+
+  color: black;
+  font-size: 1rem;
+
+  width: 100vw;
+
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  margin-top: 0 auto;
+}
+
+.footer a {
+  font-size: 1.5rem;
+  padding: 0 0.7rem;
+  color: #5d6c89;
+}
+
+.footer ul {
+  padding-inline-start: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

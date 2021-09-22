@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from "./Footer";
 import "./styles.css";
 
 //Emoji Database!
@@ -60,21 +61,25 @@ export default function App() {
       <h2> {emojiMeaning} </h2>
 
       <h2> Emoji's We Know</h2>
-      {knownEmoji.map(function (emoji) {
-        return (
-          <span
-            key={emoji}
-            onClick={() => emojiClickHandler(emoji)}
-            style={{
-              fontSize: "2rem",
-              padding: "1rem 0.5rem",
-              cursor: "pointer"
-            }}
-          >
-            {emoji}
-          </span>
-        );
-      })}
+      <div>
+        {knownEmoji.map(function (emoji) {
+          return (
+            <span
+              key={emoji}
+              onClick={() => emojiClickHandler(emoji)}
+              style={{
+                fontSize: "2rem",
+                padding: "1rem 0.5rem",
+                cursor: "pointer"
+              }}
+            >
+              {emoji}
+            </span>
+          );
+        })}
+      </div>
+
+      <Footer />
     </div>
   );
 }
